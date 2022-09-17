@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Relative path') {
             steps {
-                sh("fibonacci.sh ${env.NUMBER}")
+                source "fibonacci.sh"
             }
         }
      
